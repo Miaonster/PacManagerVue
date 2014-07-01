@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PacManager</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="lib/font-awesome-4.1.0/css/font-awesome.css">
+    </head>
+    <body>
+        <div class="search-bar">
+            <input
+                class="search"
+                type="input"
+                placeholder="Type here, for example: google.com"
+                v-model="domain"
+                v-on="keyup: onHandle"
+            >
+            <i class="fa fa-plus icon"></i>
+            <i class="file fa fa-sun-o"></i>
+        </div>
+
+        <ul class="pac-list js-pac-list">
+            <li
+                v-repeat="items"
+            >
+                <span>{{name}}</span>
+                <i class="icon-rm fa fa-times" v-on="click: onRemove(this)"></i>
+        </ul>
+        <!--<div class="default-domain">
+            <div class="content">
+                hello
+            </div>
+        </div>-->
+
+        <script src="lib/sea/sea.js"></script>
+        <script src="lib/jquery/jquery-2.0.3.js"></script>
+        <script src="lib/underscore/underscore.js"></script>
+        <script src="lib/string_score/string_score.js"></script>
+        <script src="bower_components/vue/dist/vue.js"></script>
+
+        <script>
+            seajs.use('./js/bootstrap.js');
+        </script>
+    </body>
+</html>

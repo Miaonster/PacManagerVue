@@ -1,0 +1,7 @@
+node_modules
+resources/
+
+dist/
+*.swp
+
+app/bower_components/
