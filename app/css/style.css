@@ -58,9 +58,38 @@ body {
   outline: 0;
   background: #ffffff;
 }
+@-webkit-keyframes item-leave {
+  0% {
+    left: 0;
+    height: 35px;
+  }
+  60% {
+    left: 310px;
+    height: 35px;
+  }
+  100% {
+    left: 310px;
+    height: 0;
+  }
+}
+@-webkit-keyframes item-enter {
+  0% {
+    left: -310px;
+    height: 0;
+  }
+  30% {
+    left: -310px;
+    height: 35px;
+  }
+  100% {
+    left: 0;
+    height: 35px;
+  }
+}
 .pac-list {
   height: calc(100% - 36px);
   overflow: auto;
+  list-style-type: none;
 }
 .pac-list li {
   height: 35px;
@@ -68,6 +97,13 @@ body {
   line-height: 35px;
   border-bottom: 1px solid #f6f6f6;
   padding-left: 10px;
+  position: relative;
+}
+.pac-list li.v-enter {
+  -webkit-animation: item-enter 0.3s ease-out;
+}
+.pac-list li.v-leave {
+  -webkit-animation: item-leave 0.3s ease-in;
 }
 .pac-list li:hover {
   color: #000;
@@ -90,29 +126,29 @@ body {
 }
 /*
 @-webkit-keyframes appear {
-    0% {
-        top: 50px;
-        -webkit-transform: rotateX(180deg);
-    }
-    5% {
-        top: 50px;
-        -webkit-transform: rotateX(0deg);
-    }
-    10% {
-        top: 50px;
-        -webkit-transform: rotateX(0deg);
-    }
-    20% {
-        top: 50px;
-        -webkit-transform: rotateX(180deg);
-    }
-    25% {
-        top: 100px;
-        -webkit-transform: rotateX(180deg);
-    }
-    30% {
-        top: 100px;
-        -webkit-transform: rotateX(0deg);
+0% {
+top: 50px;
+-webkit-transform: rotateX(180deg);
+}
+5% {
+top: 50px;
+-webkit-transform: rotateX(0deg);
+}
+10% {
+top: 50px;
+-webkit-transform: rotateX(0deg);
+}
+20% {
+top: 50px;
+-webkit-transform: rotateX(180deg);
+}
+25% {
+top: 100px;
+-webkit-transform: rotateX(180deg);
+}
+30% {
+top: 100px;
+-webkit-transform: rotateX(0deg);
     }
     35% {
         top: 100px;
@@ -143,16 +179,16 @@ body {
         -webkit-transform: rotateX(180deg);
     }
 }
-*/
+ */
 /*
 .default-domain {
-    top: 50px;
-    position: absolute;
-    width: 100%;
-    height: 35px;
-    background-color: #688D7F;
+top: 50px;
+position: absolute;
+width: 100%;
+height: 35px;
+background-color: #688D7F;
 
-    -webkit-animation: appear 5s linear 0s infinite;
-    -webkit-backface-visibility: hidden;
+-webkit-animation: appear 5s linear 0s infinite;
+-webkit-backface-visibility: hidden;
 }
-*/
+ */

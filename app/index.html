@@ -21,6 +21,7 @@
         <ul class="pac-list js-pac-list">
             <li
                 v-repeat="items"
+                v-animation
             >
                 <span>{{name}}</span>
                 <i class="icon-rm fa fa-times" v-on="click: onRemove(this)"></i>

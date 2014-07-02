@@ -251,7 +251,6 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('dist-mac', [
-    'jshint',
     'clean:dist',
     'copy:webkit',
     'copy:appMacos',
