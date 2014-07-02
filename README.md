@@ -3,7 +3,7 @@ Pac Manager
 
 *This repository is based on Vuejs, Seajs and node-webkit.*
 
-*Only **Mac OS X** is supported*
+*Only Mac OS X is supported*
 
 ![image](./asset/icon.png)
 
