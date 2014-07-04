@@ -8,6 +8,7 @@
     <body>
         <div class="search-bar">
             <input
+                autofocus
                 class="search"
                 type="input"
                 placeholder="Type here, for example: google.com"
@@ -18,7 +19,7 @@
             <i class="file fa fa-sun-o"></i>
         </div>
 
-        <ul class="pac-list js-pac-list">
+        <ul class="pac-list js-pac-list" v-cloak>
             <li
                 v-repeat="items"
                 v-animation

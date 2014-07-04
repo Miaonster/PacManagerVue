@@ -192,3 +192,6 @@ background-color: #688D7F;
 -webkit-backface-visibility: hidden;
 }
  */
+[v-cloak] {
+  display: none;
+}
