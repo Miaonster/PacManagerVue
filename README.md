@@ -10,9 +10,12 @@ Pac Manager
 This manager can parse the default **PAC file** of [ShadowsocksX](https://github.com/shadowsocks/shadowsocks-iOS/tree/master/ShadowsocksX). You can add new domain and delete one conveniently.
 
 #### Download
+* v0.0.2
+	* [百度网盘](http://pan.baidu.com/s/1dDqxZH3)
 
-* [Dropbox](https://www.dropbox.com/s/v10r618mfmcfc61/PacManager.dmg)
-* [百度网盘](http://pan.baidu.com/s/1pJDJV3X)
+* v0.0.1
+	* [Dropbox](https://www.dropbox.com/s/v10r618mfmcfc61/PacManager.dmg)
+	* [百度网盘](http://pan.baidu.com/s/1pJDJV3X)
 
 #### Screenshot
 
