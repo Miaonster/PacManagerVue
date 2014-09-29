@@ -41,16 +41,27 @@ define(function (require) {
                 var data,
                     value = this.domain.trim();
 
+                function parse(input) {
+                    var regex = /((?:https?:\/\/)?(?:[^\.]*\.)*?)([^\.]*\.\w+)(\/.*)?$/;
+
+                    return input.replace(regex, function (match, p1, p2, p3) {
+                        p1 = p1 || '';
+                        p2 = p2 || '';
+                        p3 = p3 || '';
+                        return p1 + p2.bold() + p3;
+                    });
+                }
+
                 if (e.keyCode === 13) {
                     this.domains.push({
                         name: value,
                         active: true
                     });
                     this.domain = '';
-                }
-
-                if (e.keyCode === 27) {
+                } else if (e.keyCode === 27) {
                     this.domain = value = '';
+                } else {
+                    //this.domain = parse(value);
                 }
             },
 
