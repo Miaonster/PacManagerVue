@@ -10,6 +10,10 @@ Pac Manager
 This manager can parse the default **PAC file** of [ShadowsocksX](https://github.com/shadowsocks/shadowsocks-iOS/tree/master/ShadowsocksX). You can add new domain and delete one conveniently.
 
 #### Download
+
+* v0.0.3
+	* [百度网盘](http://pan.baidu.com/s/1mgICi4w)
+
 * v0.0.2
 	* [百度网盘](http://pan.baidu.com/s/1dDqxZH3)
 
@@ -20,3 +24,11 @@ This manager can parse the default **PAC file** of [ShadowsocksX](https://github
 #### Screenshot
 
 ![image](./asset/screenshot.png)
+
+#### What's new
+
+##### v0.0.3
+
+* Full URL supported, you can add a long URL, PacManager will automatically match the domain
+* Valid domain in URL highlight
+* New node-webkit version *35.0.1916.157 (1916.157)*
