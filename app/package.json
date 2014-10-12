@@ -1,7 +1,6 @@
 {
   "name": "pacmanager",
   "main": "index.html",
-  "version": "0.0.2",
   "single-instance": true,
   "window": {
     "title": "PacManager",
@@ -15,5 +14,12 @@
   "dependencies": {
     "string_score": "~0.1.20",
     "sprintf": "~0.1.3"
-  }
+  },
+  "contributors": [
+    {
+      "name": "Witcher42",
+      "email": "witcher42.dy@gmaill.com"
+    }
+  ],
+  "version": "0.0.3"
 }

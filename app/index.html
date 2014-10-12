@@ -2,21 +2,19 @@
 <html>
     <head>
         <title>PacManager</title>
-        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="lib/font-awesome-4.1.0/css/font-awesome.css">
+        <link rel="stylesheet" href="bower_components/codemirror/lib/codemirror.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <div class="search-bar">
-            <input
-                autofocus
-                class="search"
-                type="input"
-                placeholder="Type here, for example: google.com"
-                v-model="domain"
-                v-on="keyup: onHandle"
-            >
-            <i class="fa fa-plus icon"></i>
-            <i class="file fa fa-sun-o"></i>
+            <textarea placeholder="Add a domain or URL" class="js-search search" ></textarea>
+            <!--<i
+                v-class=" active: domainCompletion "
+                title="Input valid url or domain name"
+                class="fa fa-plus icon"
+            ></i>
+            <i class="file fa fa-sun-o"></i>-->
         </div>
 
         <ul class="pac-list js-pac-list" v-cloak>
@@ -33,11 +31,17 @@
             </div>
         </div>-->
 
-        <script src="lib/sea/sea.js"></script>
         <script src="lib/jquery/jquery-2.0.3.js"></script>
         <script src="lib/underscore/underscore.js"></script>
         <script src="lib/string_score/string_score.js"></script>
         <script src="bower_components/vue/dist/vue.js"></script>
+        <script src="bower_components/codemirror/lib/codemirror.js"></script>
+        <script src="./bower_components/codemirror/addon/display/placeholder.js"></script>
+        <script src="./bower_components/mousetrap/mousetrap.js"></script>
+        <script src="./bower_components/mousetrap/plugins/global-bind/mousetrap-global-bind.js"></script>
+
+        <script src="./js/oneline.js"></script>
+        <script src="./lib/sea/sea.js"></script>
 
         <script>
             seajs.use('./js/bootstrap.js');

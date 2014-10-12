@@ -18,6 +18,7 @@ body {
     border-bottom: 1px solid #f0f0f0;
     box-shadow: 0 0px 5px rgba(0, 0, 0, .1);
     position: relative;
+    display: flex;
 
     .search,
     .icon,
@@ -25,6 +26,14 @@ body {
         cursor: text;
         color: #ccc;
         transition: color .08s ease-in;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .icon,
+    .file {
+        height: 12px;
+        line-height: 35px;
     }
 }
 
@@ -32,21 +41,27 @@ body {
     padding-top: 1px;
     padding-right: 2px;
     &:hover {
+        cursor: default;
+    }
+    &.active {
         color: #333;
-        cursor: pointer;
+        &:hover {
+            color: #40B883;
+            cursor: pointer;
+        }
     }
 }
 
 .file {
     font-size: 14px;
     &:hover {
-        color: #333;
+        color: #40B883;
         cursor: pointer;
     }
 }
 
 .search {
-    display: inline-block;
+    display: none;
     width: ~"calc(100% - 40px)";
     background: #fefefe;
     height: 35px;
@@ -60,6 +75,46 @@ body {
         color: #333;
         outline: 0;
         background: #ffffff;
+    }
+}
+
+.cm-s-default.CodeMirror {
+    font-family: 'Times New Roman';
+    color: #555;
+    height: 35px;
+    padding: 7px 0 7px 6px;
+    flex: 1;
+    margin-right: 10px;
+
+    .cm-keyword {
+        color: #40B883;
+        font-weight: bold;
+        //letter-spacing: -0.08em;
+    }
+
+    //.cm-keyword-exsit {
+    //    color: #33485D;
+    //    font-weight: bold;
+    //}
+
+    .CodeMirror-hscrollbar {
+        display: none !important;
+    }
+
+    .CodeMirror-scroll {
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .CodeMirror-measure div {
+        height: 13px !important;
+        width: 13px !important;
+    }
+
+    .CodeMirror-placeholder {
+        color: #ccc;
+        font-family: 'Times New Roman';
+        font-size: 13px;
     }
 }
 

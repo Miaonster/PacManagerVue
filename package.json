@@ -1,6 +1,5 @@
 {
   "name": "pacmanager",
-  "version": "0.0.2",
   "description": "",
   "keywords": [],
   "homepage": "https://github.com/Witcher42/pacmanager",
@@ -29,5 +28,6 @@
   },
   "engines": {
     "node": ">=0.8.0"
-  }
+  },
+  "version": "0.0.3"
 }
