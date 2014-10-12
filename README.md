@@ -24,6 +24,7 @@ This manager can parse the default **PAC file** of [ShadowsocksX](https://github
 #### Screenshot
 
 ![image](./asset/screenshot.png)
+![image](./asset/screenshot1.png)
 
 #### What's new
 
